@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const conv = require('number-to-words')
 
-const prefix = '4'
+const prefix = '1'
 
 const client = new Discord.Client({ disableEveryone: true});
 
@@ -22,8 +22,8 @@ client.on('warn', console.warn);
 client.on('error', console.error);
 
 client.on('ready', () => {
-    console.log(`Created By: MohmaedAlhassny`);
-    console.log(`Developed By: ! Abdulrhman ♥`);
+    console.log(`Created By:RaiDèèèr♪`);
+    console.log(`Developed By:xÝousşef`);
     console.log(`Guilds: ${client.guilds.size}`);
     console.log(`Users: ${client.users.size}`);
     client.user.setActivity('Alhassny Orders.',{type: 'WATCHING'});
@@ -408,7 +408,7 @@ function play(guild, song) {
 
 //admin
 
-const devs = ['449313863494664214','228401267263668224','326131905743421440'];
+const devs = ['315927449823084545','427611667631964180','412373041675370497,'];
 
 client.on('message', message => {
     let argresult = message.content.split(` `).slice(1).join(' ');
@@ -470,7 +470,7 @@ client.on('message', message => {
   ` + '`' + prefix + 'setStatus` - **لتغيير حالة البوت**' + `
 
 
-** BetterGroip Shop..**`
+`Forèst To The Top`
   if(message.content === prefix + 'help') {
     message.author.send(helplist);
   }
