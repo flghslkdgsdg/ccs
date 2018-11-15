@@ -32,7 +32,7 @@ if (message.content.startsWith(adminprefix + 'st')) {
 });
 
 const adminprefix = "+";
-const devs = ['427611667631964180'];
+const devs = ['463041270277996554'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
