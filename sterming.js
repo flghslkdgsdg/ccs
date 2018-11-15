@@ -1,13 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '-'
+const prefix = '.'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-if (message.content.startsWith(adminprefix + 'st')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/idk")
-    message.channel.sendMessage(`**:white_check_mark:: ${argresult}**`)
-  
+client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -48,7 +45,7 @@ return message.reply("**لا يمكنك تغيير الاسم يجب عليك ا
 } else
 if (message.content.startsWith(adminprefix + 'setstreem')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");
-    message.channel.sendMessage(`**:white_check_mark:: ${argresult}**`)
+    message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 }
 
 });
@@ -56,7 +53,7 @@ if (message.content.startsWith(adminprefix + 'setstreem')) {
 client.on('message',function(message) {
     let args = message.content.split(" ").slice(1).join(" ");
    if(message.content.startsWith(adminprefix + "setWatch")) {
-       if(message.author.id !== '427611667631964180') return;
+       if(message.author.id !== '463041270277996554') return;
        client.user.setActivity(args,{type: 'WATCHING'});
        message.channel.send("**- :white_check_mark: Done!,**");
    } 
@@ -64,7 +61,7 @@ client.on('message',function(message) {
 client.on('message',function(message) {
     let args = message.content.split(" ").slice(1).join(" ");
    if(message.content.startsWith(adminprefix + "setListen")) {
-       if(message.author.id !== '427611667631964180') return;
+       if(message.author.id !== '463041270277996554') return;
        client.user.setActivity(args,{type: 'LISTENING'});
        message.channel.send("**- :white_check_mark: Done!,**");
    } 
