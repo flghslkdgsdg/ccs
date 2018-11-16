@@ -1,4 +1,4 @@
- const devs = ['412373041675370497' , '' , ''];
+ const devs = ['427611667631964180' , '' , ''];
 const adminprefix = "-";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
