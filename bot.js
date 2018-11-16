@@ -5,7 +5,7 @@ const developers = ['427611667631964180'];
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`~`,'https://www.twitch.tv/Mdax')
+  client.user.setGame(`Time does not change one, time reveals every person to his truth`,'https://www.twitch.tv/Mdax')
   client.user.setStatus("idle")
 });
 
