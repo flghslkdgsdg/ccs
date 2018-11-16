@@ -5,7 +5,7 @@ const developers = ['427611667631964180'];
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`~`,'https://www.twitch.tv/Mdax')
+  client.user.setGame(`.LeèVi was here .☕`,'https://www.twitch.tv/Mdax')
   client.user.setStatus("idle")
 });
 
@@ -13,17 +13,17 @@ client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!developers.includes(message.author.id)) return;
 
-if (message.content.startsWith('Lwt')) {
+if (message.content.startsWith('Mwt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
   client.user.setStatus("idle")
     message.channel.send(` ** ${argresult} \ ** `)
 } else 
-if (message.content.startsWith('Lls')) {
+if (message.content.startsWith('Mls')) {
 client.user.setActivity(argresult , {type:'LISTENING'});
   client.user.setStatus("idle")
     message.channel.send(` ** ${argresult} \ ** `)
 } else 
-if (message.content.startsWith('Lst')) {
+if (message.content.startsWith('Mst')) {
   client.user.setGame(argresult, "https://www.twitch.tv/Mdax");
   client.user.setStatus("idle")
    message.channel.send(` ** ${argresult} \ ** `)
@@ -33,7 +33,7 @@ if (message.content.startsWith('Lst')) {
 client.on('message', message => {
         if (!developers.includes(message.author.id)) return;
   if (message.content === '0..') {
-  let channel = client.channels.get('511744532992229377');
+  let channel = client.channels.get('496373766394347520');
 
   channel.join()
   .then(connection => console.log('Connected'))
