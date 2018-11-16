@@ -17,7 +17,7 @@ client.on('message', message => {
       message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'st')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/love");
+    client.user.setGame(argresult, "https://www.twitch.tv/amira");
       message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
   }
   });
