@@ -1,1 +1,1 @@
-worker: node sterming.js
+worker: node bot.js
