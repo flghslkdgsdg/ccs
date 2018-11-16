@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const developers = ['427611667631964180'];
+const developers = ['463041270277996554'];
 
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`.LeèVi was here .☕`,'https://www.twitch.tv/Mdax')
+  client.user.setGame(`~`,'https://www.twitch.tv/Mdax')
   client.user.setStatus("idle")
 });
 
@@ -33,7 +33,7 @@ if (message.content.startsWith('Mst')) {
 client.on('message', message => {
         if (!developers.includes(message.author.id)) return;
   if (message.content === '0..') {
-  let channel = client.channels.get('496373766394347520');
+  let channel = client.channels.get('511744532992229377');
 
   channel.join()
   .then(connection => console.log('Connected'))
