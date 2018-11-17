@@ -28,3 +28,5 @@ client.user.setGame(`Nothing, ☕💙`,"https://www.twitch.tv/love")
   console.log('')
 });
 
+
+client.login(process.env.BOT_TOKEN);
