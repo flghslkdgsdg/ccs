@@ -4,7 +4,7 @@ const prefix = '.'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
+client.user.setGame(`Nothing, ☕💙`,"https://www.twitch.tv/love")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -28,43 +28,28 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
 });
 
-const adminprefix = "L";
-const devs = ['427611667631964180'];
-client.on('message', message => {
-  var argresult = message.content.split(` `).slice(1).join(' ');
-    if (!devs.includes(message.author.id)) return;
+
+
+
+
+
+client.on('ready', function(){    
+    var ms = 40000 ;    
+    var setGame = [`Nothing, ☕💙`];    
+    var i = -1;    
+    var j = 0;    
+    setInterval(function (){    
+        if( i == -1 ){    
+j = 1;    
+       }    
+        if( i == (setGame.length)-1 ){    
+            j = -1;    
+      }    
+       i = i+j;    
+        client.user.setGame(setGame[i],`https://www.twitch.tv/love`);    
+}, ms);    
     
-if (message.content.startsWith(adminprefix + 'setgame')) {
-  client.user.setGame(argresult);
-    message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
-} else 
-  if (message.content.startsWith(adminprefix + 'setname')) {
-client.user.setUsername(argresult).then
-    message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)
-return message.reply("**لا يمكنك تغيير الاسم يجب عليك الانتظآر لمدة ساعتين . **");
-} else
-if (message.content.startsWith(adminprefix + 'setstreem')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/idk");
-    message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
-}
-
 });
 
-client.on('message',function(message) {
-    let args = message.content.split(" ").slice(1).join(" ");
-   if(message.content.startsWith(adminprefix + "setWatch")) {
-       if(message.author.id !== '427611667631964180') return;
-       client.user.setActivity(args,{type: 'WATCHING'});
-       message.channel.send("**- :white_check_mark: Done!,**");
-   } 
-});
-client.on('message',function(message) {
-    let args = message.content.split(" ").slice(1).join(" ");
-   if(message.content.startsWith(adminprefix + "setListen")) {
-       if(message.author.id !== '427611667631964180') return;
-       client.user.setActivity(args,{type: 'LISTENING'});
-       message.channel.send("**- :white_check_mark: Done!,**");
-   } 
-});
 
 client.login(process.env.BOT_TOKEN);
