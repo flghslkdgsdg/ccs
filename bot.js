@@ -28,7 +28,7 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
 });
 
-const adminprefix = "TM";
+const adminprefix = "L";
 const devs = ['427611667631964180'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
