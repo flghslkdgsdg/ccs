@@ -4,7 +4,7 @@ const prefix = '.'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Nothing. ☕😴`,"http://twitch.tv/S-F")
+client.user.setGame(`Nothing. ☕😴`,"https://www.twitch.tv/love")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -46,7 +46,7 @@ j = 1;
             j = -1;    
       }    
        i = i+j;    
-        client.user.setGame(setGame[i],`http://twitch.tv/S-F`);    
+        client.user.setGame(setGame[i],`https://www.twitch.tv/love`);    
 }, ms);    
     
 });
