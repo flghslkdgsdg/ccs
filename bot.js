@@ -4,7 +4,7 @@ const prefix = '.'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`i Love you`,"http://twitch.tv/S-F")
+client.user.setGame(`i Love you, 💜`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -35,7 +35,7 @@ client.user.setGame(`i Love you`,"http://twitch.tv/S-F")
 
 client.on('ready', function(){    
     var ms = 40000 ;    
-    var setGame = [`Everything is fine in the end, if not, it's not the end.`,"No doubt you're the dumbest people if you're looking in the heart that hates you ,"];    
+    var setGame = [`i Love you, 💙`,"i Love you, 🖤 ,"];    
     var i = -1;    
     var j = 0;    
     setInterval(function (){    
