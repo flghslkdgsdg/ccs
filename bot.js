@@ -36,7 +36,7 @@ client.on('message', message => {
     
 if (message.content.startsWith(adminprefix + 'setgame')) {
   client.user.setGame(argresult);
-    message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
+    message.channel.sendMessage(`**${argresult} :white_check_mark: : **`)
 } else 
   if (message.content.startsWith(adminprefix + 'setname')) {
 client.user.setUsername(argresult).then
@@ -45,7 +45,7 @@ return message.reply("**لا يمكنك تغيير الاسم يجب عليك ا
 } else
 if (message.content.startsWith(adminprefix + 'setstreem')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");
-    message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
+    message.channel.sendMessage(`**:white_check_mark: : ${argresult}**`)
 }
 
 });
